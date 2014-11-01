@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Act2cMenus</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="note">Notas</string>
+    <string name="caja">Caja</string>
+    <string name="camera">Cámara</string>
+    <string name="cal">Calculadora</string>
+    <string name="nfile">Nuevo archivo</string>
+    <string name="stadist">Estadísticas</string>
+    <string name="help">Ayuda</string>
+	<string name="crear">Crear</string>
+	<string name="crearN">Crear Nuevo</string>
+	<string name="abrirC">Abrir Caja</string> 
+	<string name="abrirCamN">Iniciar Normal</string>
+	<string name="abrirCamNoc">Iniciar NightShot</string>
+	<string name="calcC">Científica</string>
+	<string name="calcB">Básica</string>
+</resources>
