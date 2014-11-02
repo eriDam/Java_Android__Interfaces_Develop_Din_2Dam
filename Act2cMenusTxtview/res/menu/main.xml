@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.act2cmenus.MainActivity" >
+    
+    <item
+        android:id="@+id/notes"
+        android:title="@string/note">
+        	<menu>
+            <item
+                android:id="@+id/crearN"
+                android:title="@string/crearN"/>
+            <item
+                android:id="@+id/borrarN"
+                android:title="@string/borrarN"/>
+            <item
+                android:id="@+id/editarN"
+                android:title="@string/editarN"/>
+        </menu>
+       </item>
+     
+     <item
+        android:id="@+id/box"
+        android:title="@string/caja">
+        	<menu>
+            <item
+                android:id="@+id/abrirC"
+                android:title="@string/abrirC"/>
+        </menu>
+       </item> 
+     
+      <item
+        android:id="@+id/camera"
+        android:title="@string/camera">
+        	<menu>
+            <item
+                android:id="@+id/abrirCamN"
+                android:title="@string/abrirCamN"/>
+            <item
+                android:id="@+id/abrirCamNoc"
+                android:title="@string/abrirCamNoc"/>
+        </menu>
+       </item>  
+     
+      <item
+        android:id="@+id/cal"
+        android:title="@string/cal">
+        	<menu>
+            <item
+                android:id="@+id/calcC"
+                android:title="@string/calcC"/>
+            <item
+                android:id="@+id/calcB"
+                android:title="@string/calcB"/>
+        </menu>
+       </item>  
+      
+      <item
+        android:id="@+id/nfile"
+        android:title="@string/nfile">
+        	<menu>
+            <item
+                android:id="@+id/crear"
+                android:title="@string/crear"/>
+        </menu>
+       </item>
+      
+      <item
+        android:id="@+id/stadist"
+        android:title="@string/stadist"/>7
+</menu>

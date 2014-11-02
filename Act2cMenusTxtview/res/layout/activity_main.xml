@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.act2cmenus.MainActivity" >
+
+    <TextView
+        android:id="@+id/textVfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textVstadist"
+        android:layout_alignLeft="@+id/textVnotes"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/ic_fileplus" />
+
+    <TextView
+        android:id="@+id/textVcalc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textVfile"
+        android:layout_centerVertical="true"
+        android:background="@drawable/ic_calc" />
+
+    <TextView
+        android:id="@+id/textVbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="29dp"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/ic_box" />
+
+    <TextView
+        android:id="@+id/textVnotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textVbox"
+        android:layout_alignBottom="@+id/textVbox"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="42dp"
+        android:background="@drawable/ic_notes" />
+
+    <TextView
+        android:id="@+id/textVstadist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textVcam"
+        android:layout_below="@+id/textVcam"
+        android:layout_marginTop="39dp"
+        android:background="@drawable/ic_stadist" />
+
+    <TextView
+        android:id="@+id/textVcam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textVbox"
+        android:layout_centerVertical="true"
+        android:background="@drawable/ic_camera" />
+
+</RelativeLayout>

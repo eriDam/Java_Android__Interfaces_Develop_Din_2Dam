@@ -12,11 +12,16 @@
     <string name="stadist">Estadísticas</string>
     <string name="help">Ayuda</string>
 	<string name="crear">Crear</string>
+	<string name="borrarN">Borrar</string>
+	<string name="editarN">Editar</string>
 	<string name="crearN">Crear Nuevo</string>
 	<string name="abrirC">Abrir Caja</string> 
 	<string name="abrirCamN">Iniciar Normal</string>
 	<string name="abrirCamNoc">Iniciar NightShot</string>
 	<string name="calcC">Científica</string>
 	<string name="calcB">Básica</string>
-	<string name="context_menu">Context Menú</string>
+	<string name="context_notes">Pulsa nota</string>
+	<string name="txtVbox">Pulsa Caja</string>
+ 
+	
 </resources>
