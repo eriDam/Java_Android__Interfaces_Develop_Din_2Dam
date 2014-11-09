@@ -1,0 +1,42 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.din.videoejactionbar.MainActivity" >
+
+    <!--La action Bar, la podemos definir como el menú, las distintas entradas
+    del actionBar son Acciones normalmente se especifican en el xml pero tambien se 
+    puede con código -->
+   
+   <!-- El atributo orderInCategory de 1 valor entero indica el orden de cada item,
+    cuanto mas pequeño es el valor, mas a la izquierda sale.
+    -showAsAction es el aributo que nos permite configurar la accion, podemos decir donde 
+    queremos esta accion si con icono en la actionBar o con tetxo en el overflow como entrada
+    Tiene distintos valores: always, never, withText, ifRoom es el mas común, se muestra en 
+    la actionBar si se puede(normalmenete en horizontal caben ctrl+f11 en avd) -->
+   <item
+        android:id="@+id/action_search"
+        android:orderInCategory="30"
+        android:showAsAction="ifRoom|withText"
+        android:icon="@drawable/ic_action_search"
+        android:title="@string/action_search"/>
+    
+     <item
+        android:id="@+id/action_refresh"
+        android:orderInCategory="50"
+        android:showAsAction="ifRoom|withText"
+        android:icon="@drawable/ic_action_refresh"
+        android:title="@string/action_refresh"/>
+     
+     <item
+        android:id="@+id/action_important"
+        android:orderInCategory="60"
+        android:showAsAction="ifRoom|withText"
+        android:icon="@drawable/ic_action_important"
+        android:title="@string/action_important"/>
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_settings"/>
+
+</menu>
