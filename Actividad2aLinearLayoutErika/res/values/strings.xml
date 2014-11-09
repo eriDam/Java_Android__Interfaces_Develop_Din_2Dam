@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Act.2a LinearLayout</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="blue">Blue 1</string>
+    <string name="blue2">Blue 2</string>
+    <string name="blue3">Blue 3</string>
+    <string name="blue4">Blue 4</string>
+    <string name="blue5">Blue 5</string>
+    <string name="col1">Columna_uno</string>
+    <string name="col2">Columna_dos</string>
+    <string name="col3">Columna_tres</string>
+    <string name="col4">Columna_cuatro</string>
+    
+
+</resources>
