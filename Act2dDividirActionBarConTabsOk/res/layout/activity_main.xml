@@ -1,0 +1,144 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.tutodividiractionbarandroidstudio.MainActivity" >
+
+    <!-- Es el elemento principal debe llevar el id para hacer referencia despues
+         es 1 Contenedor para una vista de la ventana con pestañas-->
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <!--
+         Este LinearLayout se va a encargar de distribuir verticalmente las
+ 		 secciones principales de los tabs -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <!-- TabWidget  Es la seccion de   pestañas
+            Muestra una lista de etiquetas de la ficha que representan a cada página en la recolección 
+            de la ficha de la matriz.
+            El objeto contenedor de este widget es TabHost . Cuando el usuario selecciona una ficha, este objeto 
+            envía un mensaje al contenedor principal, TabHost, a decirle que  cambie  la página mostrada -->
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray"
+                android:onClick="@string/buscar" />
+
+            <!-- FrameLayout Es el contenedor de cada pestaña, contiene cada una y sus contenidos -->
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <!-- Tab1 Incluimos el contenido de cada tab con su propio  Layout -->
+
+                <RelativeLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textViewfolder_private"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/textViewfolder_mart"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="25dp"
+                        android:background="@drawable/ic_folder_private" />
+
+                    <TextView
+                        android:id="@+id/textViewfolder_public"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/textViewfolder_private"
+                        android:layout_alignBottom="@+id/textViewfolder_private"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="41dp"
+                        android:background="@drawable/ic_folder_public" />
+
+                    <TextView
+                        android:id="@+id/textViewfolder_pictures"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/textViewfolder_documents"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/ic_folder_pictures" />
+
+                    <TextView
+                        android:id="@+id/textViewfolder_documents"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/textViewfolder_text"
+                        android:layout_alignBottom="@+id/textViewfolder_text"
+                        android:layout_alignLeft="@+id/textViewfolder_public"
+                        android:background="@drawable/ic_folder_documents"
+                        android:text=" " />
+
+                    <TextView
+                        android:id="@+id/textViewfolder_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="34dp"
+                        android:layout_marginTop="34dp"
+                        android:background="@drawable/ic_folder_text" />
+
+                    <TextView
+                        android:id="@+id/textViewfolder_mart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/textViewfolder_pictures"
+                        android:layout_alignBottom="@+id/textViewfolder_pictures"
+                        android:layout_alignLeft="@+id/textViewfolder_text"
+                        android:background="@drawable/ic_folder_mart" />
+                    <!-- Cerramos el primer LinearLayout tab1 -->
+                    
+                </RelativeLayout>
+                
+                <!-- Tab2 Incluimos el contenido de cada tab con su propio linearLayout -->
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textV2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="30sp"
+                        android:text="Mi tab2" />
+                    
+                    <Button
+                        android:id="@+id/btn1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Button tab2" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+</LinearLayout>
+           
