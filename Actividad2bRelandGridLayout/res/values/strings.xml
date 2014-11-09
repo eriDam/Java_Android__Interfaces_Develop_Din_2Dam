@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Actividad2bRelandGridLayout</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="foto14">Foto14</string>
+    <string name="album_1">Album 1</string>
+    <string name="album_2">Album 2</string>
+    <string name="album_3">Album 3</string>
+    <string name="foto_1">Foto 1</string>
+    <string name="foto_2">Foto 2</string>
+	<string name="foto_3">Foto 3</string>
+	<string name="foto_4">Foto 4</string>
+    <string name="foto_5">Foto 5</string>
+	<string name="foto_6">Foto 6</string>
+	<string name="foto_7">Foto 7</string>
+    <string name="foto_8">Foto 8</string>
+	<string name="foto_9">Foto 9</string>
+	<string name="foto_10">Foto 10</string>
+    <string name="foto_11">Foto 11</string>
+	<string name="foto_12">Foto 12</string>
+	<string name="foto_13">Foto 13</string>
+	<string name="foto_14">Foto 14</string>
+	<string name="foto_15">Foto 15</string>
+	<string name="foto_16">Foto 16</string>
+	<string name="foto_17">Foto 17</string>
+	<string name="foto_18">Foto 18</string>
+</resources>
