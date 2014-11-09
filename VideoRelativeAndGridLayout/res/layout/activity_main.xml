@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.videorelativeandgridlayout.MainActivity" >
+	<!-- Las unidades de medida sp (skell independent pixel), son para texto, las dp para elementos -->
+    <TextView
+        android:id="@+id/textEscribe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/txtVEscribe"
+        android:textSize="24sp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editT"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textEscribe"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+         >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btnCancelar"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editT"
+        android:layout_marginLeft="10dip"
+        android:layout_toLeftOf="@+id/textEscribe"
+        android:text="@string/btnCanc"
+        android:textSize="24sp"/>
+
+    <Button
+        android:id="@+id/btnOK"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnCancelar"
+        android:layout_toLeftOf="@+id/btnCancelar"
+        android:text="@string/btnOk" 
+        android:textSize="24sp"/>
+
+</RelativeLayout>
